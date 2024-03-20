@@ -17,10 +17,6 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: "",
-        element: <HeroOne />,
-      },
-      {
         path: "Research/",
         element: <Research />,
         children: [
