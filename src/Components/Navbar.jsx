@@ -120,38 +120,42 @@ function Navbar() {
         </button>
         {/* Mobile Dropdown Menu */}
         <div className="md:hidden absolute z-50 mt-2 origin-top-right rounded-md shadow-lg   ">
-          <button
+          <NavLink
+            to="/Planning"
             className={`text-white mx-4 ${
               activeSection === "Planning" ? "bg-gray-600" : ""
             }`}
             onClick={() => toggleSection("Planning")}
           >
             Planning
-          </button>
-          <button
+          </NavLink>
+          <NavLink
+            to="/Desiging"
             className={`text-white mx-4 ${
               activeSection === "Desiging" ? "bg-gray-600" : ""
             }`}
             onClick={() => toggleSection("Desiging")}
           >
             Desiging
-          </button>
-          <button
+          </NavLink>
+          <NavLink
+            to="/Manufacturing"
             className={`text-white mx-4 ${
               activeSection === "Manufacturing" ? "bg-gray-600" : ""
             }`}
             onClick={() => toggleSection("Manufacturing")}
           >
             Manufacturing
-          </button>
-          <button
+          </NavLink>
+          <NavLink
+            to="/book-now"
             className={`text-white mx-4 ${
               activeSection === "Book Now" ? "bg-gray-600" : ""
             }`}
             onClick={() => toggleSection("Book Now")}
           >
             Book Now
-          </button>
+          </NavLink>
           {isOpen && (
             <div className="relative left-60">
               <ul className="py-1 divide-y divide-gray-200  mt-24 ">
